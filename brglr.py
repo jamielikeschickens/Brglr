@@ -10,7 +10,7 @@ class Brglr(object):
     def __init__(self):
         self.create_start_layout()
         self.account_sid = os.environ.get('TWILIO_ACCOUNT_SID')
-        self.auth_token = os.environ.get('TWILIO_ACCOUNT_SID')
+        self.auth_token = os.environ.get('TWILIO_AUTH_TOKEN')
         self.client = twilio.rest.TwilioRestClient(self.account_sid, self.auth_token)
         self.test_no = 'your verified number'
         self.threshold = 3000000.0
