@@ -16,12 +16,13 @@ It was made for the Simpleweb hacknight sponsored by Twilio.
 ## How?
 
 Uses Collins et. al method for differential images, with a specified
-threshold. Then current frame is then taken and written to an image.
+threshold. The current frame is then taken and written to an image.
 
 The image is uploaded to imgur and a link is attached to the body of
 the message sent using Twilio. Once MMS is available through Twilio in
 the UK it would be nice to use their `MediaUrl` property.
 
-## Install Assuming all prerequisties are installed.
+## Running
+Assuming all prerequisties are installed.
 
 `python brglr.py`
